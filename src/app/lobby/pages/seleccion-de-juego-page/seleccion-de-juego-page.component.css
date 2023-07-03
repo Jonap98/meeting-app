@@ -1,0 +1,19 @@
+.main-container {
+  background-color: #4788E9;
+  padding-top: 5rem;
+  padding-inline: 2rem;
+  height: 100vh;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Roboto;
+  color: #fff;
+}
+
+.selection-button {
+  background-color: #fff;
+}
+
