@@ -1,6 +1,6 @@
 .main-container {
-  background-color: #4788E9;
-  padding-top: 5rem;
+  background-color: #F4F4F4;
+  padding-top: 2rem;
   padding-inline: 2rem;
   height: 100vh;
 }
@@ -10,67 +10,101 @@ h1 {
   font-weight: bold;
   font-style: italic;
   font-family: Roboto;
+  color: #424242;
+}
+
+.navigation-bar {
+  padding-inline: 2rem;
+}
+
+span {
+  font-weight: bold;
+  font-style: italic;
+  font-family: Roboto;
+  color: #424242;
+}
+
+.player-icon {
+  padding: 20px;
+  border-radius: 20px;
+  background: #4788E9;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50);
+}
+
+.icono {
+  border-radius: 800px;
+  /* background:  lightgray 50% / cover no-repeat; */
+  /* background: lightgray 50% / cover no-repeat; */
+  background-color: #fff;
+}
+
+
+
+
+/* .wrapper {
+  border: 2px solid #f76707;
+  border-radius: 5px;
+  background-color: #fff4e6;
+} */
+
+.player-card {
+  /* border: 2px solid #ffa94d; */
+  border-radius: 30px;
+  background-color: #4788E9;
+  padding: 1em;
+  /* color: #d9480f; */
+  aspect-ratio: 1;
+}
+
+.player-info {
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  font-family: Roboto;
+  color: #4788E9;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+@media ( min-width: 768px ) {
+  .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+
+
+
+
+
+/* Estilos cards dialogo - Hay que refactorizar y crear un componente independiente */
+.card-item {
+  margin: 1rem;
+  border-radius: 15px;
+  background-color: #4788E9;
+  padding: 1rem;
+}
+
+.card-item h1 {
   color: #fff;
 }
 
-/* .game-progress {
-  border: solid 2px;
-} */
-
-@property --p{
-  syntax: '<number>';
-  inherits: true;
-  initial-value: 0;
+.card-item span {
+  color: #fff;
 }
 
-.pie {
-  --p:20;
-  --b:22px;
-  --c:darkred;
-  --w:150px;
-
-  width:var(--w);
-  aspect-ratio:1;
-  position:relative;
-  display:inline-grid;
-  margin:5px;
-  place-content:center;
-  font-size:25px;
-  font-weight:bold;
-  font-family:sans-serif;
-}
-.pie:before,
-.pie:after {
-  content:"";
-  position:absolute;
-  border-radius:50%;
-}
-.pie:before {
-  inset:0;
-  background:
-    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
-    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
-  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-}
-.pie:after {
-  inset:calc(50% - var(--b)/2);
-  background:var(--c);
-  transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
-}
-.animate {
-  animation:p 1s .5s both;
-}
-.no-round:before {
-  background-size:0 0,auto;
-}
-.no-round:after {
-  content:none;
-}
-@keyframes p {
-  from{--p:0}
+.active span {
+  color: #4788E9;
 }
 
-body {
-  background:#ddd;
+.active path {
+  fill: #4788E9;
 }

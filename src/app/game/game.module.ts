@@ -6,6 +6,13 @@ import { ResumenDeJuegoPageComponent } from './pages/resumen-de-juego-page/resum
 import { TusRetosPageComponent } from './pages/tus-retos-page/tus-retos-page.component';
 import { KnobModule } from 'primeng/knob';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { SpeedDialModule } from 'primeng/speeddial';
+import { TabMenuModule } from 'primeng/tabmenu';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { DialogModule } from 'primeng/dialog';
+import { GalleriaModule } from 'primeng/galleria';
+// import { RippleModule } from 'primeng/ripple';
+
 
 
 @NgModule({
@@ -18,7 +25,12 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     GameRoutingModule,
     KnobModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    SpeedDialModule,
+    TabMenuModule,
+    ProgressBarModule,
+    DialogModule,
+    GalleriaModule,
   ]
 })
 export class GameModule { }
